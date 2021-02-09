@@ -1,41 +1,88 @@
 package domain;
 
+
+ /**
+ * The class Animal
+ */ 
 public class Animal  {
 
     protected int weight;
 
     protected int height;
 
-    public Animal () {
+
+/** 
+ *
+ * It is a  default constructor. 
+ *
+ */
+    public Animal () { 
+
         weight = 62 ;
         height = 176;
         
     }
 
-    public void walk() {
+
+/** 
+ *
+ * Mathod that allows animal to walk
+ *
+ */
+    public void walk() { 
+
         
-    System.out.println( "Eating! ");
+    System.out.println( "Walking! ");
     }
 
-    public void lookAround() {
+
+/** 
+ *
+ * Mathod that allows animal to look around
+ *
+ */
+    public void lookAround() { 
+
         
        System.out.println("it seems like nobody else here!"); 
        
     }
 
-    public void eat() {
+
+/** 
+ *
+ * Mathod that allows animal to eat
+ *
+ */
+    public void eat() { 
+
         
         
        System.out.println("I`m eatin now!");
     }
 
-    public void sleep() {
+
+/** 
+ *
+ * Sleep
+ *
+ */
+    public void sleep() { 
+
       System.out.println("Zzzzz - Zzzzz - Zzzz");
       
     }
 
     @Override
-    public String toString() {
+
+/** 
+ *
+ * To string - return {@link weight}, {@link height}
+ *
+ * @return String
+ */
+    public String toString() { 
+
         return "My animal : " + "\nWeight : \t" + weight + " \nHeight : \t" + height;
     }
 

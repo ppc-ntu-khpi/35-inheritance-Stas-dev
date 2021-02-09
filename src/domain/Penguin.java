@@ -1,45 +1,113 @@
 package domain;
 
+
+ /**
+ * The class Penguin extends animal
+ */ 
 public class Penguin extends Animal  {
 
     private String name;
 
-    public Penguin (int weight, int height, String name) {
+
+/** 
+ *
+ * Constructor of penguins for 3 variables
+ *
+ * @param weight  the weight
+ * @param height  the height
+ * @param name  the name
+
+ */
+    public Penguin (int weight, int height, String name) { 
+
         this.height = height ;
         this.weight = weight;
         this.name = name;
     }
 
-    public Penguin () {
+
+/** 
+ *
+ * Default constructor of penguin
+ *
+ * 
+ */
+    public Penguin () { 
+
         this(55, 15, "Shkipe");
     }
 
-    public Penguin(String name) {
+
+/** 
+ *
+ * Penguin constructoor with name
+ *
+ * @param name  the name
+ 
+ */
+    public Penguin(String name) { 
+
         this(55, 15, name);
     }
     
 
-    public void swim() {
+
+/** 
+ *
+ * Mathod that allows penguin to swim
+ *
+ */
+    public void swim() { 
+
         System.out.println("Penguin is swim right now!");
     }
 
     @Override
-    public String toString() {
+
+/** 
+ *
+ * To string
+ *
+ * @return String
+ */
+    public String toString() { 
+
         return super.toString()+"\n Name:\t"+ this.name+ "\n I`m penguin";
     }
 
     @Override
-    public void sleep() {
+
+/** 
+ *
+ * Sleep
+ *
+ */
+    public void sleep() { 
+
         System.out.println("Penguin is sleeping "); 
     }
 
     @Override
-    public void lookAround() {
+
+/** 
+ *
+ * Look around
+ *
+ */
+    public void lookAround() { 
+
         System.out.println("Kovalski  and Riko  is here!");
     }
 
     @Override
-    public void walk() {
+
+/** 
+ *
+ * Walk
+ *
+ */
+    public void walk() { 
+
         System.out.println("Penguin is walking..");
     }
     

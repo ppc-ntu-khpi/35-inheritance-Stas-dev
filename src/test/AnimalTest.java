@@ -2,9 +2,21 @@ package test;
 
 import domain.Penguin;
 
+
+ /**
+ * The class Animal test
+ */ 
 public class AnimalTest {
 
-    public static  void main(String[] args) {
+
+/** 
+ *
+ * Default Main
+ *
+ * @param args  the args
+ */
+    public static  void main(String[] args) { 
+
         Penguin penguin  = new Penguin();
         System.out.println(penguin);
         penguin.walk();
